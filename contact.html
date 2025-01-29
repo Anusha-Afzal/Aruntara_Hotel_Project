@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(32, 30, 30);
+}
+
+
+
+
+/* Navigation bar  */
+nav {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+padding: 10px 20px;
+background-image: linear-gradient(#033747, #012733);
+}
+
+nav .logo p {
+
+font-size: 2rem;
+font-weight: bold;
+color: aliceblue;
+letter-spacing: 1.5px;
+margin-right: 20px;
+}
+
+nav ul {
+
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+nav ul li {
+
+margin: 5px 10px;
+}
+
+nav ul li a {
+
+font-size: 20px;
+padding: 18px;
+color: white;
+text-decoration: none;
+transition: background-color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+
+background-color: darkgoldenrod;
+}
+
+
+/* Form Or Address  */
+        .parent {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+
+            /* align-items: flex-start; */
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px;
+            color: darkgoldenrod;
+            width: 100%;
+        }
+
+
+        
+.msg-section {
+
+display: flex;
+justify-content: center;
+align-items: center;
+/* align-items: flex-start; */
+flex-wrap: wrap;
+padding: 10px;
+
+flex-direction: column;
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+width: 45%;
+/* width: 100%; */
+
+}
+
+.msg-container p {
+
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+padding: 10px;
+color: white;
+} 
+
+
+        form .contact-section {
+
+            display: flex;
+            /* justify-content: center; */
+            flex-direction:column;
+            /* align-items: center; */
+            /* width: 45%; */
+            width: 100%;
+            margin-bottom: 20px;
+            /* padding: 10px 0; */
+            /* padding-left: 20px; */
+
+        }
+        .contact-container {
+
+            width: 100%;
+            margin: 10px 0;
+            
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+
+        select{
+
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 5px;
+            height: 30px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+button {
+    background-color:darkgoldenrod;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+
+    background-color: rgb(43, 46, 37);
+}
+
+
+/* FOOTER PORTION */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(98, 71, 4);
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0px;
+
+}
+.section {
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    margin: 10px;
+     flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.about, .quicklinks, .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.section h2 {
+
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+}
+
+.quicklinks ul li, .contact p {
+
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    
+}
+
+.quicklinks ul li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.quicklinks ul li a:hover {
+    color: wheat; 
+}
+.contact p {
+
+    color: black;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+              <p>ARUNTARA</p>
+            </div>
+    
+            <ul>
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="contact.html"> Contact </a></li>
+              <li><a href="booking.html"> Book Now </a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+<main>
+
+    <div class="parent">
+
+            <div class="msg-section">
+
+                <h1>Aruntara Riverside Boutique Hotel</h1>
+                
+                <div class="msg-container">
+                    <p>351/1 Charoen Prathet Rd., Changklan, Muang, Chiang Mai 50100 Thailand</p> 
+                    <p>Admin : info@aruntarahotel.com</p> 
+                    <p>Reservation :rsvn@aruntarahotel.com</p>
+                    <p>Line ID : http://line.me/ti/p/~0871108008</p>
+                    <p>tel: 053235111</p><br/>
+                    <p>tel: 0871108008</p>
+                </div>
+
+
+            </div>
+
+        <form action="index.html">   
+
+            <div class="contact-section">
+
+                <H1>CONTACT US </H1>
+    
+                <div class="contact-container">
+    
+                    <label for="name"> Name :</label>
+                    <input type="text" name="name" placeholder="Enter your name " required>
+    
+                    <label for="name"> Email :</label>
+                    <input type="email" name="email" placeholder="Enter your email " required>
+
+                    <label for="name"> Number :</label>
+                    <input type="number" name="number" placeholder="Enter your number " required>
+    
+                    <label for="name"> Message :</label>
+                   <textarea name="Message" rows="6" cols="93" ></textarea>
+                </div>
+
+                <button><a href="index.html"></a>Sent</button>
+            </div>
+         </form>
+
+    </div>
+        
+</main>
+
+
+<footer>
+    <div class="header-container">
+
+      <div class="section">
+
+
+        <div class="about">
+          <h2>ABOUT US</h2>
+          <p>
+            Aruntara Riverside Boutique Hotel in Chiang Mai, Thailand is located
+            on the banks of the Mae Ping River.
+            <br />
+            Enjoy a peaceful and harmonious stay in our quiet oasis, while only
+            being a short distance away from the vibrant inner city of Chiang
+            Mai.
+          </p>
+        </div>
+
+
+
+        <div class="quicklinks">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+
+        <div class="quicklinks">
+          <h2>CONNECT</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+
+
+        <div class="contact">
+          <h2>CONTACT INFO</h2>
+          <p>
+            351/1 Charoen Prathet Road, T. Changklan, A. Muang, Chiang Mai 50100
+            Thailand
+          </p>
+          <p>TEL: +66 53 302 066</p>
+          <p>FAX: +66 53 302 068</p>
+          <p>EMAIL:  info@aruntarahotel.com </p>
+        </div>
+
+      </div>
+
+     </div>
+
+</footer>
+
+</body>
+</html>

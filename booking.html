@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+
+
+    <style>
+
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+color:darkgoldenrod;
+background-color: rgb(32, 30, 30) ;
+
+}
+
+
+/* Navigation bar  */
+nav {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+padding: 10px 20px;
+background-image: linear-gradient(#033747, #012733);
+}
+
+nav .logo p {
+
+font-size: 2rem;
+font-weight: bold;
+color: aliceblue;
+letter-spacing: 1.5px;
+margin-right: 20px;
+}
+
+nav ul {
+
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+nav ul li {
+
+margin: 5px 10px;
+}
+
+nav ul li a {
+
+font-size: 20px;
+padding: 18px;
+color: white;
+text-decoration: none;
+transition: background-color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+
+background-color: darkgoldenrod;
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+font-size: 3rem;
+padding: 10px;
+
+}
+
+form {
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+/* border: 1px solid #333; */
+border-radius: 20px;
+box-shadow: 0 0 10px grey;
+padding: 20px;
+margin: 50px auto;
+max-width: 600px;
+
+
+}
+
+.form-container {
+
+display: flex;
+flex-direction: column;
+width: 100%;
+margin-bottom: 20px;
+
+}
+
+.form-section {
+
+width: 100%;
+margin: 10px 0;
+}
+
+input[type="text"],
+input[type="cnic"],
+input[type="email"],
+input[type="number"],
+
+select{
+
+width: 100%;
+max-width: 600px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+height: 40px;
+box-sizing: border-box;
+
+}
+
+input[type="text"]:focus,
+input[type="cnic"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+
+select:focus {
+
+border-color: darkslategrey;
+box-shadow: 0 0 5px cornflowerblue;
+
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+padding: 10px;
+}
+
+button[type="submit"] {
+
+width: 100%;
+max-width: 600px;
+height: 40px;
+font-weight: bold;
+font-size: 16px;
+background-color: darkslategrey;
+border-radius: 5px;
+border: none;
+color: black;
+}
+
+button[type="submit"]:hover {
+
+background-color: olive;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+              <p>ARUNTARA</p>
+            </div>
+    
+            <ul>
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="contact.html"> Contact </a></li>
+              <li><a href="booking.html"> Book Now </a></li>
+            </ul>
+          </nav>
+
+    </header>
+    
+
+    <main>
+
+
+        <form action="index.html" method="post">
+
+            <h1>HOTEL RESERVATION </h1>
+            <p>Experience something new every moment Enjoy your vacations :)</p>
+
+        <div class="form-container">
+
+            <div class="form-section">
+            
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" maxlength="10" placeholder="enter your first name" required>
+                        
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" maxlength="10" placeholder="enter your last name " required>
+                  
+                        <label for="email"> Email:</label>
+                        <input type="email" name="email" placeholder="enter your email " required>
+    
+                        <label for="number">Mobile Number:</label>
+                        <input type="number" name="mobileNumber" placeholder="enter your mobile number" required>
+            
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" required>
+
+                        <label for="city">City:</label>
+                        <input type="text" name="city" required>
+
+                        <label for="state/provience">State : </label>
+                        <input type="text" name="state" required>
+
+                        <label for="country">Country : </label>
+                        <input type="text" name="country" required>
+
+                        <label for="postal-code">Postal-Code :</label>
+                        <input type="text" required>
+                        
+                        <label for="Date"> Check-in :</label>
+                        <input type="date" name="date" required>
+
+                        <label for="Date"> Check-out :</label>
+                        <input type="date" name="date" required>
+
+                        <label for="number"> Number of Guests :</label>
+                        <input type="number" name="number" required>
+
+                        <label for="cnic">Upload CNIC:</label>
+                        <input type="cnic" name="cnic" accept=".pdf, .docx" required>
+
+            </div>
+
+
+            <div>
+
+                <button type="submit"> Submit  </button>
+
+            </div>
+
+        </div>
+    </form>
+    </main>
+
+</body>
+</html>

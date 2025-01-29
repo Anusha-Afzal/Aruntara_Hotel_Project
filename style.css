@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color:black;
+} */
+
+/* Navigation bar  */
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 20px;
+    background-image: linear-gradient(#033747, #012733);
+}
+
+nav .logo p {
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+}
+
+nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+
+    margin: 5px 10px;
+}
+
+nav ul li a {
+
+    font-size: 20px;
+    padding: 18px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+
+    background-color: darkgoldenrod;
+}
+
+.home-image img {
+
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+/* heading portion */
+
+section#heading {
+    background-image: url("images/ss.jfif");
+    background-size: cover; 
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+.heading-sec h1 {
+
+    color:darkgoldenrod;
+    font-size: 40px;
+    text-align: left;
+    padding:0 30px;
+    margin-top: 20px;
+}
+ 
+.heading-sec p {
+
+    color:darkgoldenrod;
+    font-size: 20px;
+    float: left;
+    padding: 0 20px;
+    margin-top: o 40px;
+    
+}
+
+/* Rooms portion */
+
+#room {
+
+    padding-top: 40px;
+    text-align: center;
+    font-size:  3rem;;
+    color: darkgoldenrod;
+    letter-spacing: 2px;
+    background-color:rgb(32, 30, 30) ;
+   
+} 
+.room-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(32, 30, 30);
+    height: auto;
+
+}
+.room {
+
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+.room img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.room h2 {
+    margin: 10px 0;
+    color: #060606;
+    
+}
+
+.room a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.room:hover {
+    transform: translateY(-20px);
+}
+
+/* massage or meal portion */
+
+.massage-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("images/dark.webp");
+    background-size: cover;
+    width: 100%;
+}  
+
+
+.massage-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* gap: 5px; */
+
+}
+
+.container {
+
+    position: relative;
+    flex: 1 1 45%;
+    max-width: 500px;
+    margin: 20px 110px;
+  
+}
+
+.heading {
+    /* position: absolute; */
+    top: -30px;
+    left: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkgoldenrod;
+  }
+
+
+.massage {
+
+    background-color:#666666;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+.massage img {
+
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.massage h2 {
+
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: darkgoldenrod;
+}
+
+.massage p {
+
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color:darkgoldenrod;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+
+    background-color:rgb(32, 30, 30) ;
+}
+
+/* Gallery portion  */
+
+.parent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 1520px; */
+    width: 100%;
+    margin:0;
+    background-color: #242222;
+    height: auto;
+}
+
+
+.msg-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px; 
+    max-width: 500px;
+    flex-wrap: wrap;
+    
+   
+}
+ .msg-section #heading {
+    top: -20px;
+    align-items: center;
+    font-size: 3rem;
+    color: darkgoldenrod;
+    background-color: #242222;
+}
+
+.msg-container p {
+
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+} 
+
+.gallery-section {
+
+    margin:0;
+    background-color: #242222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    max-width: 800px;
+    gap: 2px;
+    width: 100%;
+    float: left;
+}
+
+.gallery {
+
+    background-color: #242222;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+   
+}
+
+.gallery img {
+
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+
+}
+
+/* FOOTER PORTION */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(98, 71, 4);
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0px;
+
+}
+.section {
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    margin: 10px;
+     flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.about, .quicklinks, .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.section h2 {
+
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+}
+
+.quicklinks ul li, .contact p {
+
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    
+}
+
+.quicklinks ul li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.quicklinks ul li a:hover {
+    color: wheat; 
+}
+.contact p {
+
+    color: black;
+    font-size: 16px;
+}
