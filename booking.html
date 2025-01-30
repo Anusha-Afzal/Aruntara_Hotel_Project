@@ -171,6 +171,89 @@ button[type="submit"]:hover {
 background-color: olive;
 }
 
+
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    input[type="text"],
+    input[type="cnic"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 5px;
+        height: auto;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    form {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    input[type="text"],
+    input[type="cnic"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 8px;
+        height: auto;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    form {
+        padding: 20px;
+        margin: 50px auto;
+    }
+
+    input[type="text"],
+    input[type="cnic"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 10px;
+        height: 40px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
     </style>
 </head>
 <body>

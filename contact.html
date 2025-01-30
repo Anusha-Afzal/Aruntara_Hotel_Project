@@ -177,7 +177,7 @@ button:hover {
     background-color: rgb(98, 71, 4);
     padding: 10px 0px;
     width: 100%;
-    max-width: 1550px;
+    /* max-width: 1550px; */
     margin: 0px;
 
 }
@@ -191,6 +191,7 @@ button:hover {
     margin: 10px;
      flex-wrap: wrap;
     width: 100%;
+    max-width: 1550px;
     margin: 10px;
 
 }
@@ -241,6 +242,108 @@ button:hover {
     font-size: 16px;
 }
 
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parent {
+        flex-direction: column;
+    }
+
+    .msg-section, .contact-section {
+        width: 100%;
+    }
+
+    .msg-container p {
+        font-size: 14px;
+    }
+
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 10px;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .msg-section, .contact-section {
+        width: 100%;
+    }
+
+    .msg-container p {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 15px;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .parent {
+        flex-direction: row;
+    }
+
+    .msg-section, .contact-section {
+        width: 45%;
+    }
+
+    .msg-container p {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 20px;
+        height: 30px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+s
     </style>
 </head>
 <body>

@@ -401,3 +401,144 @@ button:hover {
     color: black;
     font-size: 16px;
 }
+
+/* Media Queries For Responsiveness */
+
+/* For Small Devices */
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-image img {
+        height: auto;
+    }
+
+    .heading-sec h1 {
+        font-size: 30px;
+    }
+
+    .heading-sec p {
+        font-size: 16px;
+    }
+
+    .room-container {
+        flex-direction: column;
+    }
+
+    .room {
+        max-width: 100%;
+    }
+
+    .massage-container {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 20px 0;
+    }
+
+    .gallery-section {
+        flex-direction: column;
+    }
+
+    .gallery {
+        max-width: 100%;
+    }
+}
+
+
+/* FOR MEDIUM DEVICES  */
+
+@media screen (min-wdth:600px) and (max-width:768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .home-image img {
+        height: 50vh;
+    }
+
+    .heading-sec h1 {
+        font-size: 35px;
+    }
+
+    .heading-sec p {
+        font-size: 18px;
+    }
+
+    .room-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .room {
+        max-width: 45%;
+    }
+
+    .massage-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        margin: 20px 5%;
+    }
+
+    .gallery-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        max-width: 45%;
+    }
+}
+
+
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .home-image img {
+        height: 100vh;
+    }
+
+    .heading-sec h1 {
+        font-size: 40px;
+    }
+
+    .heading-sec p {
+        font-size: 20px;
+    }
+
+    .room-container {
+        flex-direction: row;
+    }
+
+    .room {
+        max-width: 300px;
+    }
+
+    .massage-container {
+        flex-direction: row;
+    }
+
+    .container {
+        margin: 20px 110px;
+    }
+
+    .gallery-section {
+        flex-direction: row;
+    }
+
+    .gallery {
+        max-width: 200px;
+    }
+}
