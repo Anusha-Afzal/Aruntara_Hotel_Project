@@ -259,7 +259,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* width: 1520px; */
     width: 100%;
     margin:0;
     background-color: #242222;
@@ -332,14 +331,14 @@ button:hover {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(98, 71, 4);
-    padding: 10px 0px;
+    padding: 10px 20px;
     width: 100%;
-    max-width: 1550px;
-    margin: 0px;
+    /* max-width: 1550px; */
+   
 
 }
 .section {
@@ -350,8 +349,9 @@ button:hover {
     align-items: center;
     flex-direction:row;
     margin: 10px;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
+    max-width: 1550px;
     margin: 10px;
 
 }
